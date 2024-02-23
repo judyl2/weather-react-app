@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./WeatherApp.css";
 import axios from "axios";
 
-export default function App() {
+export default function WeatherApp() {
 	const [city, setCity] = useState("");
 	const [result, setResult] = useState(false);
 	const [temperature, setTemperature] = useState(null);
