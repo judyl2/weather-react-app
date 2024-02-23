@@ -35,17 +35,22 @@ export default function WeatherApp() {
 		setCity(event.target.value);
 	}
 	let form = (
-		<div className="App">
+		<div>
 			<form onSubmit={handleSubmit}>
-				<input type="search" placeholder="Enter city" onChange={updateCity} />
-				<input type="submit" value="Search" />
+				<input
+					type="search"
+					placeholder="Enter city"
+					onChange={updateCity}
+					className="search-input"
+				/>
+				<input type="submit" value="Search" className="search-button" />
 			</form>
 		</div>
 	);
 
 	if (result === true) {
 		return (
-			<div>
+			<div className="App">
 				{form}
 				<ul>
 					<li>Temperture: {temperature}°C</li>
@@ -59,6 +64,6 @@ export default function WeatherApp() {
 			</div>
 		);
 	} else {
-		return form;
+		return <div className="App"> {form}</div>;
 	}
 }

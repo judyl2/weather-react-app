@@ -7,8 +7,22 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<h2>Weather App</h2>
+		{/* <h1>Weather App</h1> */}
 		<WeatherApp />
+		<footer>
+			Coded by{" "}
+			<a href="https://github.com/judyl2" target="blank">
+				Judy
+			</a>{" "}
+			code hosted on{" "}
+			<a href="https://github.com/judyl2?tab=repositories" target="blank">
+				Github
+			</a>{" "}
+			website hosted on{" "}
+			<a href="https://capable-maamoul-566235.netlify.app/" target="blank">
+				Netlify
+			</a>
+		</footer>
 	</React.StrictMode>
 );
 
